@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIGHTREEL — Watch what's next</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">NIGHTREEL</a>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" title="Search">⌕</button>
+      <div class="avatar"></div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="hero-backdrop"></div>
+  <div class="hero-fade"></div>
+  <div class="hero-content">
+    <div class="hero-badge">NIGHTREEL ORIGINAL</div>
+    <h1 class="hero-title">Glass Horizon</h1>
+    <div class="hero-meta">
+      <span class="match">98% match</span>
+      <span>2026</span>
+      <span class="age-badge">16+</span>
+      <span>3 Seasons</span>
+      <span class="hd-badge">HD</span>
+    </div>
+    <p class="hero-desc">When a signal from beyond the solar system starts rewriting memories on Earth, a disgraced linguist is the only one who can translate it before the world forgets itself.</p>
+    <div class="hero-ctas">
+      <button class="btn-play">▶ Play</button>
+      <button class="btn-info" id="heroInfoBtn">ⓘ More Info</button>
+    </div>
+  </div>
+</header>
+
+<main class="rows" id="rows"></main>
+
+<footer class="site-footer">
+  <p>NIGHTREEL is a demo streaming interface. All titles, cast, and artwork are fictional.</p>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal-backdrop-fade"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-ctas">
+        <button class="btn-play">▶ Play</button>
+        <button class="icon-btn round" title="Add to My List">+</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-main">
+        <div class="modal-meta">
+          <span class="match" id="modalMatch"></span>
+          <span id="modalYear"></span>
+          <span class="age-badge" id="modalAge"></span>
+          <span id="modalLength"></span>
+        </div>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+      <div class="modal-side">
+        <p><span class="side-label">Cast:</span> <span id="modalCast"></span></p>
+        <p><span class="side-label">Genres:</span> <span id="modalGenres"></span></p>
+        <p><span class="side-label">Mood:</span> <span id="modalMood"></span></p>
+      </div>
+    </div>
+
+    <div class="more-like-this">
+      <h3>More Like This</h3>
+      <div class="similar-grid" id="similarGrid"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
